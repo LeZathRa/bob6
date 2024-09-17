@@ -27,7 +27,7 @@ services:
     container_name: spark-worker-aws
     environment:
       - SPARK_MODE=worker
-      - SPARK_MASTER_URL=spark://179.7.180.205:7077  # Aquí va la IP pública de la instancia EC2
+      - SPARK_MASTER_URL=spark://172.22.131.30:7077  # Aquí va la IP pública de la instancia EC2
     networks:
       - spark-net
 
